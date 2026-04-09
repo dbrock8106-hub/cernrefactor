@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Short History of Hypertext</title>
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../assets/css/cernsite-base.css"/>
+    <link rel="stylesheet" href="../assets/css/cernsite-page.css"/>
+    <style>
+        .timeline { list-style: none; padding: 0; position: relative; max-width: 700px; margin: 2rem auto; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: #0072b1; transform: translateX(-50%); }
+        .timeline li { display: flex; justify-content: flex-end; padding-right: calc(50% + 2rem); position: relative; margin-bottom: 1.5rem; }
+        .timeline li:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: calc(50% + 2rem); }
+        .timeline-content { background: #f0f4f8; border-left: 4px solid #0072b1; padding: 0.75rem 1rem; border-radius: 4px; max-width: 300px; position: relative; }
+        .timeline li:nth-child(even) .timeline-content { border-left: none; border-right: 4px solid #0072b1; }
+        .timeline-content::before { content: ''; position: absolute; right: -12px; top: 12px; width: 12px; height: 12px; background: #0072b1; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px #0072b1; }
+        .timeline li:nth-child(even) .timeline-content::before { left: -12px; right: auto; }
+        .timeline-year { font-weight: 700; color: #0072b1; font-size: 1.1rem; margin-bottom: 0.25rem; }
+        .timeline-desc { font-size: 0.95rem; line-height: 1.5; margin: 0; }
+        @media (max-width: 600px) {
+            .timeline::before { left: 1rem; }
+            .timeline li, .timeline li:nth-child(even) { justify-content: flex-start; padding-left: 3rem; padding-right: 0; }
+            .timeline-content, .timeline li:nth-child(even) .timeline-content { border-left: 4px solid #0072b1; border-right: none; max-width: 100%; }
+            .timeline-content::before, .timeline li:nth-child(even) .timeline-content::before { left: -2.5rem; right: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Short History of Hypertext</h1>
+    <hr class="title-rule"/>
+    <nav aria-label="breadcrumb">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="hypermedia.html">Hypertext</a></li>
+            <li>Timeline</li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <p class="page-intro">This chronological list identifies the foundational milestones in the development of hypertext and hypermedia systems prior to the birth of the WorldWideWeb project.</p>
+
+    <ul class="timeline">
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1945</div>
+                <p class="timeline-desc">Vannevar Bush (Science Advisor to President Roosevelt during WW2) proposes "Memex," a conceptual machine to store and link vast amounts of information.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1965</div>
+                <p class="timeline-desc">Ted Nelson coins the word "Hypertext" to describe non-linear writing.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1967</div>
+                <p class="timeline-desc">Andy van Dam and others build the Hypertext Editing System and FRESS at Brown University.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1968</div>
+                <p class="timeline-desc">Doug Engelbart demonstrates the NLS (oN-Line System) at the Fall Joint Computer Conference (the "Mother of All Demos").</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1975</div>
+                <p class="timeline-desc">ZOG (now KMS) is developed at Carnegie Mellon University (CMU).</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1978</div>
+                <p class="timeline-desc">The Aspen Movie Map is created at MIT — the first hypermedia videodisc.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1984</div>
+                <p class="timeline-desc">Filevision from Telos: A hypermedia database for the Macintosh.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1985</div>
+                <p class="timeline-desc">Symbolics Document Examiner (Janet Walker) and InterMedia (Norman Meyrowitz at Brown University).</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1986</div>
+                <p class="timeline-desc">OWL introduces "Guide," the first widely available hypertext system for personal computers.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1987</div>
+                <p class="timeline-desc">Apple introduces HyperCard (Bill Atkinson). The first Hypertext '87 Workshop is held.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-year">1990</div>
+                <p class="timeline-desc">ECHT (European Conference on HyperText) marks a major expansion in the field.</p>
+            </div>
+        </li>
+    </ul>
+
+    <address><a href="../about/people/people.html#cailliau">RC</a></address>
+
+</main>
+
+<footer>
+    <p><a href="../index.html">Home</a></p>
+</footer>
+
+</body>
+</html>

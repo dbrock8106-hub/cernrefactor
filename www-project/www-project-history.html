@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>WWW Project History</title>
+    <!-- Pico CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.fluid.classless.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <!-- Site styles -->
+    <link rel="stylesheet" href="../assets/css/cernsite-base.css"/>
+    <link rel="stylesheet" href="../assets/css/cernsite-page.css"/>
+    <style>
+        .timeline { list-style: none; padding: 0; position: relative; max-width: 800px; margin: 2rem auto; }
+        .timeline::before { content: ''; position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background: #0072b1; transform: translateX(-50%); }
+        .timeline li { display: flex; justify-content: flex-end; padding-right: calc(50% + 2rem); position: relative; margin-bottom: 1.5rem; }
+        .timeline li:nth-child(even) { justify-content: flex-start; padding-right: 0; padding-left: calc(50% + 2rem); }
+        .timeline-content { background: #f0f4f8; border-left: 4px solid #0072b1; padding: 0.75rem 1rem; border-radius: 4px; max-width: 340px; position: relative; }
+        .timeline li:nth-child(even) .timeline-content { border-left: none; border-right: 4px solid #0072b1; }
+        .timeline-content::before { content: ''; position: absolute; right: -12px; top: 12px; width: 12px; height: 12px; background: #0072b1; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 0 2px #0072b1; }
+        .timeline li:nth-child(even) .timeline-content::before { left: -12px; right: auto; }
+        .timeline-date { font-weight: 700; color: #0072b1; font-size: 0.9rem; margin-bottom: 0.25rem; }
+        @media (max-width: 600px) {
+            .timeline::before { left: 1rem; }
+            .timeline li, .timeline li:nth-child(even) { justify-content: flex-start; padding-left: 3rem; padding-right: 0; }
+            .timeline-content, .timeline li:nth-child(even) .timeline-content { border-left: 4px solid #0072b1; border-right: none; max-width: 100%; }
+            .timeline-content::before, .timeline li:nth-child(even) .timeline-content::before { left: -2.5rem; right: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>History to date</h1>
+    <hr class="title-rule"/>
+    <nav aria-label="breadcrumb">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="www-project-overview.html">WWW Project</a></li>
+            <li>Project History</li>
+        </ul>
+    </nav>
+</header>
+
+<main id="main-content">
+
+    <p class="page-intro">A few steps to date in the WorldWideWeb project history are as follows:</p>
+
+    <ul class="timeline">
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">March 1989</div>
+                <p>First <a href="proposal.html">project proposal</a> written and circulated for comment (<a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>). Paper "HyperText and CERN" produced as background.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">October 1990</div>
+                <p>Project proposal reformulated with encouragement from CN and ECP divisional management. <a href="../about/people/people.html#cailliau">RC</a> is co-author.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">November 1990</div>
+                <p>Initial WorldWideWeb prototype developed on the NeXT by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a>.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">November 1990</div>
+                <p><a href="../about/people/people.html#pellow">Nicola Pellow</a> joins and starts work on the line-mode browser. <a href="../about/people/people.html#pollermann">Bernd Pollermann</a> helps get interface to CERNVM "FIND" index running. <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">TBL</a> gives a <a href="#">colloquium</a> on hypertext in general.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">Christmas 1990</div>
+                <p>Line-mode and NeXTStep browsers demonstrable. Access is possible to hypertext files, CERNVM "FIND", and internet <a href="#">news</a> articles.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">February 1991</div>
+                <p><a href="#">Workplan</a> produced for the purposes of ECP division.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">26 February 1991</div>
+                <p><a href="#">Presentation</a> of the project to the ECP group.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">March 1991</div>
+                <p>Line-mode browser (WWW) released to a limited audience on Priam VAX, RS6000, and Sun4.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">May 1991</div>
+                <p><a href="#">Workplan</a> produced for CN/AS group.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">17 May 1991</div>
+                <p><a href="#">Presentation</a> to C5 committee. General release of WWW on central CERN machines.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">12 June 1991</div>
+                <p>CERN <a href="#">Computer Seminar</a> on WWW.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">August 1991</div>
+                <p>Files available on the net, posted on various <a href="#">newsgroups</a> (alt.hypertext, comp.sys.next, etc.). <a href="../about/people/people.html#groff">Jean-François Groff</a> joins the project.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">October 1991</div>
+                <p>VMS/HELP and WAIS gateways installed. Mailing lists and anonymous telnet service started. One-year status report.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">December 1991</div>
+                <p>Presented poster and demonstration at <a href="#">HT91</a>. W3 browser installed on VM/CMS. CERN <a href="#">computer newsletter</a> announces W3 to the HEP world.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">15 January 1992</div>
+                <p>Line-mode browser release 1.1 available by anonymous FTP. Presentation to AIHEP'92 at La Londe.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">12 February 1992</div>
+                <p>Line-mode v1.2 announced on multiple newsgroups including alt.hypertext and comp.infosystems.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">May 1992</div>
+                <p>Presentation and <a href="#">demo</a> at <a href="#">JENC3</a> (Innsbruck). <a href="#">Carl Barker</a> joins the project.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">June 1992</div>
+                <p>Presentation and demo at HEPVM (Lyon).</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">July 1992</div>
+                <p>Distribution of WWW through CernLib, including Viola. WWW library code ported to DECnet.</p>
+            </div>
+        </li>
+        <li>
+            <div class="timeline-content">
+                <div class="timeline-date">August 1992</div>
+                <p><a href="#">Introduction of CVS</a> for code management.</p>
+            </div>
+        </li>
+    </ul>
+
+    <address><a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a></address>
+
+</main>
+
+<footer>
+    <p><a href="../index.html">Home</a></p>
+</footer>
+
+</body>
+</html>
